@@ -1,6 +1,7 @@
 package com.ensa.backofficeservice.service;
 
 import com.ensa.backofficeservice.domains.Transfer;
+import com.ensa.backofficeservice.enums.Status;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,6 +39,8 @@ public interface TransferService {
 
     public List<Transfer> findTransferByexprDate(LocalDateTime exprDate);
 
-    public List<Transfer> findByMotifBlocage(String motifBlocage);
+    public List<Transfer> findByStatus(Status status);
+
+    public Transfer save(Transfer transfer);
 }
 

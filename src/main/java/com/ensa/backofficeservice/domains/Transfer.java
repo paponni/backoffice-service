@@ -25,6 +25,5 @@ public class Transfer{
     private EmissionType mode; //ByGab-ByAgent
     private LocalDateTime transferDate;
     private LocalDateTime exprDate;
-    //add new attribute motif of blocage
-    private String motifBlocage;
+
 }
